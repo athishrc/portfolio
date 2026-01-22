@@ -1,28 +1,227 @@
+<!-- pages/resume.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href ="../styles/globals.css">
+    <title>Resume - Athish Ramesh</title>
+    <link rel="stylesheet" href="../styles/globals.css">
 </head>
 <body>
-<div class = "container">
-  <header class = "top-bar">
-    <!-- <p class = "home">athish.rc</p> -->
-    <nav class="nav-links">
-      <a href = ../index.html class="home">athish.rc</a>
-    </nav>
-    
-    <nav class = "nav-links">
-      <a href = ../pages/about.html>about</a>
-      <a href = ../pages/portfolio.html>portfolio</a>
-      <a href = ../assets/AUTOSAR_EXP_LayeredSoftwareArchitecture.pdf>resume</a>
-    </nav>
-  </header>
-  <hr class = "seperator">
-  <h1>Click here</h1>
-  <p>Download Resume</p>
-</div>
-    </body>
+    <h1>athish<span>.</span>rc<span>_</span></h1>
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="header-container">
+            <div class="brand-area">
+                <div class="brand-logo">AR</div>
+                <div class="brand-text">
+                    <h1>athish<span>.</span>rc<span>_</span></h1>
+                    <!-- <p>serious skills. comfy setting.</p> -->
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.html" style="background: #b71c1c;">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Divider -->
+    <div class="content-divider">
+        <h2>resume</h2>
+    </div>
+
+    <!-- Resume Section -->
+    <section class="resume">
+        <div class="container">
+            <!-- Download Button -->
+            <div class="download-section">
+                <a href="../Resume_latest.pdf" download class="download-btn">
+                    <svg class="download-icon" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    Download PDF
+                </a>
+            </div>
+
+            <!-- Resume Content -->
+            <div class="resume-content">
+                <!-- Header -->
+                <div class="resume-header">
+                    <h1>ATHISH RAMESH</h1>
+                    <h2>Embedded Software Engineer</h2>
+                    <div class="resume-contact">
+                        <span>📧 your.email@example.com</span>
+                        <span>📍 Tiruppur, Tamil Nadu, India</span>
+                        <span>🔗 <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></span>
+                        <span>💻 <a href="https://github.com/yourprofile" target="_blank">GitHub</a></span>
+                    </div>
+                </div>
+
+                <!-- Professional Summary -->
+                <div class="resume-section">
+                    <h3>PROFESSIONAL SUMMARY</h3>
+                    <p style="color: #b0b0b0; line-height: 1.8;">
+                        Embedded Software Engineer with expertise in developing efficient, reliable embedded solutions. 
+                        Specialized in hardware-software integration, real-time operating systems, and low-level programming 
+                        for microcontroller-based systems. Proven track record in optimizing system performance and 
+                        implementing robust embedded applications.
+                    </p>
+                </div>
+
+                <!-- Experience -->
+                <div class="resume-section">
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                    
+                    <div class="resume-item">
+                        <h4>Company Name</h4>
+                        <div class="position">Embedded Software Engineer</div>
+                        <div class="date">January 2022 - Present</div>
+                        <ul>
+                            <li>Developed and maintained embedded firmware for automotive control systems using C/C++</li>
+                            <li>Implemented AUTOSAR-compliant software modules for ECU development</li>
+                            <li>Optimized real-time performance and reduced memory footprint by 30%</li>
+                            <li>Collaborated with hardware team to debug and resolve integration issues</li>
+                            <li>Conducted code reviews and mentored junior developers</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>Previous Company</h4>
+                        <div class="position">Junior Embedded Engineer</div>
+                        <div class="date">June 2020 - December 2021</div>
+                        <ul>
+                            <li>Designed and implemented device drivers for I2C, SPI, and UART peripherals</li>
+                            <li>Developed bootloader applications for firmware updates over CAN bus</li>
+                            <li>Performed system integration testing and debugging using JTAG and logic analyzers</li>
+                            <li>Created technical documentation and design specifications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="resume-section">
+                    <h3>EDUCATION</h3>
+                    
+                    <div class="resume-item">
+                        <h4>Bachelor of Engineering in Electronics and Communication</h4>
+                        <div class="position">University Name</div>
+                        <div class="date">2016 - 2020</div>
+                        <ul>
+                            <li>CGPA: 8.5/10</li>
+                            <li>Relevant Coursework: Embedded Systems, Microprocessors, Digital Electronics, RTOS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="resume-section">
+                    <h3>TECHNICAL SKILLS</h3>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Programming Languages</h4>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>Python</li>
+                                <li>Assembly (ARM)</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Embedded Systems</h4>
+                            <ul>
+                                <li>ARM Cortex-M</li>
+                                <li>STM32</li>
+                                <li>ESP32</li>
+                                <li>Arduino</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>RTOS & Frameworks</h4>
+                            <ul>
+                                <li>FreeRTOS</li>
+                                <li>AUTOSAR</li>
+                                <li>Embedded Linux</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Protocols</h4>
+                            <ul>
+                                <li>CAN/LIN</li>
+                                <li>I2C/SPI/UART</li>
+                                <li>Bluetooth/BLE</li>
+                                <li>MQTT</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>Tools & Software</h4>
+                            <ul>
+                                <li>Git/SVN</li>
+                                <li>JTAG/SWD Debuggers</li>
+                                <li>Oscilloscope</li>
+                                <li>Logic Analyzer</li>
+                            </ul>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>IDEs</h4>
+                            <ul>
+                                <li>Keil MDK</li>
+                                <li>STM32CubeIDE</li>
+                                <li>IAR Embedded</li>
+                                <li>VS Code</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects -->
+                <div class="resume-section">
+                    <h3>KEY PROJECTS</h3>
+                    
+                    <div class="resume-item">
+                        <h4>Automotive ECU Development</h4>
+                        <ul>
+                            <li>Developed AUTOSAR-compliant software for body control module</li>
+                            <li>Implemented CAN communication stack and diagnostic protocols (UDS)</li>
+                            <li>Technologies: C, AUTOSAR, CAN, Vector tools</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <h4>IoT Sensor Network</h4>
+                        <ul>
+                            <li>Designed wireless sensor network using ESP32 and MQTT protocol</li>
+                            <li>Implemented low-power modes achieving 6-month battery life</li>
+                            <li>Technologies: C++, ESP32, BLE, MQTT, FreeRTOS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="resume-section">
+                    <h3>CERTIFICATIONS</h3>
+                    <div class="resume-item">
+                        <ul>
+                            <li>Embedded Systems - ARM Cortex Microcontroller</li>
+                            <li>AUTOSAR Fundamentals</li>
+                            <li>Real-Time Operating Systems (RTOS)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Athish Ramesh. Built with passion for embedded systems.</p>
+    </footer>
+</body>
 </html>

@@ -1,0 +1,130 @@
+<!-- pages/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Athish Ramesh</title>
+    <link rel="stylesheet" href="../styles/globals.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="name-header">
+        <h1>athish<span>.</span>rc<span>_</span></h1>
+    </div>
+    <div class="header-section">
+        <div class="header-container">
+            <!-- <div class="brand-area">
+                <div class="brand-logo">AR</div>
+                <div class="brand-text">
+                    <h1>athish<span>.</span>rc<span>_</span></h1>
+                </div>
+            </div> -->
+            <div class="nav-buttons">
+                <a href="about.html">Me..!</a>
+                <a href="portfolio.html">Projects</a>
+                <a href="contact.html" style="background: rgb(255, 115, 0);">Contact</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Divider -->
+    <div class="content-divider">
+        <h2>get in touch</h2>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <p class="contact-intro">
+                Have a project in mind or want to discuss embedded systems? <br>
+                Feel free to reach out!
+            </p>
+
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    </p>
+                    <p>
+                        <strong>Location:</strong><br>
+                        Tiruppur, Tamil Nadu, India
+                    </p>
+                    <p>
+                        <strong>LinkedIn:</strong><br>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                    </p>
+                    <p>
+                        <strong>GitHub:</strong><br>
+                        <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a>
+                    </p>
+                    <br>
+                    <p>
+                        I'm always interested in hearing about new projects and opportunities in embedded systems development.
+                    </p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+
+                        <div id="successMessage" class="success-message">
+                            Thank you for your message! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Athish Ramesh. Built with passion for embedded systems.</p>
+    </footer>
+
+    <script>
+        // Form submission handler
+        const form = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        form.addEventListener('submit', function(e) {
+            // If using formspree, it will handle the submission
+            // Show success message after form submission
+            setTimeout(() => {
+                successMessage.classList.add('show');
+                form.reset();
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    successMessage.classList.remove('show');
+                }, 5000);
+            }, 100);
+        });
+    </script>
+</body>
+</html>

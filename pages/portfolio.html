@@ -1,28 +1,112 @@
+<!-- pages/portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <link rel="stylesheet" href ="../styles/globals.css">
+    <title>Portfolio - Athish Ramesh</title>
+    <link rel="stylesheet" href="../styles/globals.css">
 </head>
 <body>
-<div class = "container">
-  <header class = "top-bar">
-    <!-- <p class = "home">athish.rc</p> -->
-    <!-- <nav class="nav-links">
-      <a href = ../index.html class="home">athish.rc</a>
-    </nav> -->
-    
-    <nav class = "nav-links">
-      <a href = ../index.html >athish.rc</a>
-      <a href = ../pages/about.html>about</a>
-      <a href = ../pages/portfolio.html class="enhance">portfolio</a>
-      <a href = ../asset/AUTOSAR_EXP_LayeredSoftwareArchitecture.pdf target="_blank">resume</a>
-    </nav>
-  </header>
-  <hr class = "seperator">
-  <p>Hello <br>Projects</p>
-</div>
-    </body>
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="header-container">
+            <div class="brand-area">
+                <div class="brand-logo">AR</div>
+                <div class="brand-text">
+                    <h1>athish<span>.</span>rc<span>_</span></h1>
+                    <!-- <p>serious skills. comfy setting.</p> -->
+                </div>
+            </div>
+            <div class="nav-buttons">
+                <a href="about.html">About</a>
+                <a href="portfolio.html" style="background: #b71c1c;">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <a href="resume.html">Resume</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Divider -->
+    <div class="content-divider">
+        <h2>projects</h2>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio">
+        <div class="container">
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project Name 1</h3>
+                    <p>Brief description of your embedded systems project. Highlight key technologies and outcomes achieved in the development process.</p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">ARM Cortex</span>
+                        <span class="tag">RTOS</span>
+                        <span class="tag">FreeRTOS</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 2</h3>
+                    <p>Another project showcasing your expertise in hardware-software integration and optimization for automotive systems.</p>
+                    <div class="project-tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">AUTOSAR</span>
+                        <span class="tag">CAN</span>
+                        <span class="tag">Diagnostics</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 3</h3>
+                    <p>Description highlighting specific challenges solved and technologies implemented for IoT device development.</p>
+                    <div class="project-tags">
+                        <span class="tag">Embedded Linux</span>
+                        <span class="tag">I2C/SPI</span>
+                        <span class="tag">Sensors</span>
+                        <span class="tag">MQTT</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 4</h3>
+                    <p>Real-time data acquisition system with custom bootloader implementation for industrial applications.</p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">STM32</span>
+                        <span class="tag">Bootloader</span>
+                        <span class="tag">Flash</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 5</h3>
+                    <p>Wireless communication module development with low-power optimization for battery-operated devices.</p>
+                    <div class="project-tags">
+                        <span class="tag">BLE</span>
+                        <span class="tag">Nordic nRF</span>
+                        <span class="tag">Power Management</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Project Name 6</h3>
+                    <p>Motor control system with advanced PWM techniques and closed-loop feedback implementation.</p>
+                    <div class="project-tags">
+                        <span class="tag">C</span>
+                        <span class="tag">PWM</span>
+                        <span class="tag">PID Control</span>
+                        <span class="tag">ADC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Athish Ramesh. Built with passion for embedded systems.</p>
+    </footer>
+</body>
 </html>
