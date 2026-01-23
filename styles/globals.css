@@ -60,3 +60,24 @@ a.enhance{
 .space{
     margin-left: 30px;
 }
+
+
+
+@media screen and (min-width: 62em) {
+    .css-lc4muf {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+
+
+.chakra-ui-light :host:not([data-theme]), .chakra-ui-light :root:not([data-theme]), .chakra-ui-light [data-theme]:not([data-theme]), [data-theme=light] :host:not([data-theme]), [data-theme=light] :root:not([data-theme]), [data-theme=light] [data-theme]:not([data-theme]), :host[data-theme=light], :root[data-theme=light], [data-theme][data-theme=light] {
+    --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+    --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+    --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+    --chakra-colors-chakra-subtle-bg: var(--chakra-colors-gray-100);
+    --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+}
