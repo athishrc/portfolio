@@ -1,0 +1,663 @@
+/* Chakra UI CSS Variables */
+:host, :root, [data-theme] {
+    --chakra-ring-inset: var(--chakra-empty,/*!*/ /*!*/);
+    --chakra-ring-offset-width: 0px;
+    --chakra-ring-offset-color: #fff;
+    --chakra-ring-color: rgba(66, 153, 225, 0.6);
+    --chakra-ring-offset-shadow: 0 0 #0000;
+    --chakra-ring-shadow: 0 0 #0000;
+    --chakra-space-x-reverse: 0;
+    --chakra-space-y-reverse: 0;
+    --chakra-colors-transparent: transparent;
+    --chakra-colors-current: currentColor;
+    --chakra-colors-black: #000000;
+    --chakra-colors-white: #FFFFFF;
+    --chakra-colors-gray-50: #F7FAFC;
+    --chakra-colors-gray-100: #EDF2F7;
+    --chakra-colors-gray-200: #E2E8F0;
+    --chakra-colors-gray-300: #CBD5E0;
+    --chakra-colors-gray-400: #A0AEC0;
+    --chakra-colors-gray-500: #718096;
+    --chakra-colors-gray-600: #4A5568;
+    --chakra-colors-gray-700: #2D3748;
+    --chakra-colors-gray-800: #1A202C;
+    --chakra-colors-blue-500: #3182ce;
+    --chakra-colors-blue-600: #2b6cb0;
+    --chakra-fonts-heading: 'Lora', serif;
+    --chakra-fonts-body: 'Lora', serif;
+    --chakra-fontSizes-sm: 0.875rem;
+    --chakra-fontSizes-md: 1rem;
+    --chakra-fontSizes-lg: 1.125rem;
+    --chakra-fontSizes-xl: 1.25rem;
+    --chakra-fontSizes-2xl: 1.5rem;
+    --chakra-fontSizes-3xl: 1.875rem;
+    --chakra-fontSizes-4xl: 2.25rem;
+    --chakra-fontSizes-5xl: 3rem;
+    --chakra-fontWeights-normal: 400;
+    --chakra-fontWeights-medium: 500;
+    --chakra-fontWeights-semibold: 600;
+    --chakra-fontWeights-bold: 700;
+    --chakra-lineHeights-base: 1.5;
+    --chakra-lineHeights-6: 1.5rem;
+    --chakra-radii-md: 0.375rem;
+    --chakra-space-1: 0.25rem;
+    --chakra-space-2: 0.5rem;
+    --chakra-space-3: 0.75rem;
+    --chakra-space-4: 1rem;
+    --chakra-space-6: 1.5rem;
+    --chakra-space-8: 2rem;
+    --chakra-space-10: 2.5rem;
+    --chakra-space-12: 3rem;
+    --chakra-space-14: 3.5rem;
+    --chakra-space-16: 4rem;
+    --chakra-sizes-prose: 60ch;
+    --chakra-sizes-container-md: 768px;
+    --chakra-transition-property-common: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+    --chakra-transition-duration-fast: 150ms;
+    --chakra-transition-duration-normal: 200ms;
+    --chakra-transition-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+    --chakra-shadows-outline: 0 0 0 3px rgba(66, 153, 225, 0.6);
+    --chakra-shadows-none: none;
+}
+
+.chakra-ui-light :host:not([data-theme]),
+.chakra-ui-light :root:not([data-theme]),
+:host[data-theme=light],
+:root[data-theme=light],
+[data-theme][data-theme=light] {
+    --chakra-colors-chakra-body-text: var(--chakra-colors-gray-800);
+    --chakra-colors-chakra-body-bg: var(--chakra-colors-white);
+    --chakra-colors-chakra-border-color: var(--chakra-colors-gray-200);
+    --chakra-colors-chakra-placeholder-color: var(--chakra-colors-gray-500);
+}
+
+/* CSS Reset */
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-family: system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-feature-settings: 'kern';
+    margin: 0;
+    font-family: var(--chakra-fonts-body);
+    color: var(--chakra-colors-chakra-body-text);
+    background: var(--chakra-colors-chakra-body-bg);
+    transition-property: background-color;
+    transition-duration: var(--chakra-transition-duration-normal);
+    line-height: var(--chakra-lineHeights-base);
+}
+
+*, *::before, *::after {
+    border-width: 0;
+    border-style: solid;
+    box-sizing: border-box;
+    border-color: var(--chakra-colors-chakra-border-color);
+    word-wrap: break-word;
+}
+
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: inherit;
+}
+
+button {
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Container */
+.chakra-container.css-1fhf3m7 {
+    width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--chakra-sizes-prose);
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    position: relative;
+    margin-top: var(--chakra-space-16);
+    padding-bottom: var(--chakra-space-8);
+}
+
+@media screen and (min-width: 48em) {
+    .chakra-container.css-1fhf3m7 {
+        padding-bottom: 10em;
+        gap: var(--chakra-space-10);
+    }
+}
+
+/* Sidebar */
+.css-lc4muf {
+    display: none;
+    position: absolute;
+    right: 100%;
+    margin-right: 160px;
+}
+
+@media screen and (min-width: 62em) {
+    .css-lc4muf {
+        display: flex;
+    }
+}
+
+.chakra-stack.css-sj5ujl {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+}
+
+.chakra-stack.css-sj5ujl > *:not(style) ~ *:not(style) {
+    margin-top: var(--chakra-space-10);
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-stack.css-1h4ws66 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.chakra-stack.css-1h4ws66 > *:not(style) ~ *:not(style) {
+    margin-top: 0.5rem;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-text.css-17sz6qk {
+    font-weight: var(--chakra-fontWeights-bold);
+    font-size: smaller;
+}
+
+.chakra-text.css-i3jkqk {
+    font-size: var(--chakra-fontSizes-lg);
+}
+
+.chakra-link.css-rz3zj1 {
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-fast);
+    transition-timing-function: var(--chakra-transition-easing-ease-out);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: var(--chakra-colors-black);
+}
+
+.chakra-link.css-rz3zj1:hover {
+    color: var(--chakra-colors-black);
+}
+
+.chakra-link.css-142zc1r {
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-fast);
+    transition-timing-function: var(--chakra-transition-easing-ease-out);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: var(--chakra-colors-gray-500);
+}
+
+.chakra-link.css-142zc1r:hover {
+    color: var(--chakra-colors-black);
+}
+
+/* Mobile Navigation */
+.css-uo7r72 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    height: 3rem;
+    z-index: 50;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--chakra-colors-gray-200);
+    background: var(--chakra-colors-white);
+}
+
+@media screen and (min-width: 62em) {
+    .css-uo7r72 {
+        display: none;
+    }
+}
+
+.chakra-container.css-a1x4sl {
+    width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--chakra-sizes-prose);
+    padding-inline-start: var(--chakra-space-8);
+    padding-inline-end: var(--chakra-space-8);
+}
+
+.css-z7mtfw {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chakra-stack.css-1ocidfa {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chakra-stack.css-1ocidfa > *:not(style) ~ *:not(style) {
+    margin-top: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: var(--chakra-space-8);
+}
+
+.chakra-button.css-ywibsw {
+    display: inline-flex;
+    appearance: none;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    line-height: 1.2;
+    border-radius: var(--chakra-radii-md);
+    font-weight: var(--chakra-fontWeights-semibold);
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-normal);
+    height: 2rem;
+    min-width: 2rem;
+    font-size: var(--chakra-fontSizes-sm);
+    padding-inline-start: var(--chakra-space-3);
+    padding-inline-end: var(--chakra-space-3);
+    border: 1px solid;
+    border-color: var(--chakra-colors-gray-200);
+    color: inherit;
+    padding: 0px;
+}
+
+.chakra-button.css-ywibsw:hover {
+    background: var(--chakra-colors-gray-100);
+}
+
+.chakra-icon.css-s48i3l {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    line-height: 1em;
+    flex-shrink: 0;
+    color: currentColor;
+}
+
+.css-r6z5ec {
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    min-width: max-content;
+    right: 0;
+    top: 100%;
+    margin-top: 0.5rem;
+}
+
+.css-r6z5ec.show {
+    visibility: visible;
+}
+
+.css-1kfu8nn {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    --menu-bg: #fff;
+    --menu-shadow: var(--chakra-shadows-sm);
+    color: inherit;
+    min-width: var(--chakra-sizes-3xs);
+    padding-top: var(--chakra-space-2);
+    padding-bottom: var(--chakra-space-2);
+    z-index: 1;
+    border-radius: var(--chakra-radii-md);
+    border-width: 1px;
+    background: var(--menu-bg);
+    box-shadow: var(--chakra-shadows-sm);
+    transform-origin: var(--popper-transform-origin);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8) translateZ(0);
+    transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+}
+
+.css-1kfu8nn.show {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+}
+
+.css-hunt27 {
+    margin-inline-start: var(--chakra-space-4);
+    margin-inline-end: var(--chakra-space-4);
+    margin-top: var(--chakra-space-2);
+    margin-bottom: var(--chakra-space-2);
+    font-weight: var(--chakra-fontWeights-semibold);
+    font-size: var(--chakra-fontSizes-sm);
+}
+
+.chakra-stack.css-6jj1oa {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    margin-bottom: var(--chakra-space-4);
+}
+
+.chakra-stack.css-6jj1oa > *:not(style) ~ *:not(style) {
+    margin-top: var(--chakra-space-3);
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-stack.css-1d77qj1 {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    margin-bottom: var(--chakra-space-2);
+}
+
+.chakra-stack.css-1d77qj1 > *:not(style) ~ *:not(style) {
+    margin-top: var(--chakra-space-3);
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-menu__group {
+    /* Menu group styling */
+}
+
+.chakra-menu__group__title {
+    /* Inherits from css-hunt27 */
+}
+
+/* Content Container */
+.chakra-container.css-191yy0c {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    max-width: var(--chakra-sizes-prose);
+    padding-inline-start: var(--chakra-space-4);
+    padding-inline-end: var(--chakra-space-4);
+    position: relative;
+
+    
+}
+
+@media screen and (min-width: 48em) {
+    .chakra-container.css-191yy0c {
+        width: var(--chakra-sizes-container-md);
+    }
+}
+
+.css-1pcvbva {
+    width: 100%;
+    background: var(--chakra-colors-white);
+    height: 4rem;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    display: none;
+}
+
+@media screen and (min-width: 62em) {
+    .css-1pcvbva {
+        display: block;
+    }
+}
+
+/* Article Styles */
+.css-18fqvvy h1 {
+    font-family: var(--chakra-fonts-heading);
+    font-weight: var(--chakra-fontWeights-bold);
+    font-size: var(--chakra-fontSizes-4xl);
+    margin-bottom: var(--chakra-space-8);
+}
+
+@media screen and (min-width: 48em) {
+    .css-18fqvvy h1 {
+        font-size: var(--chakra-fontSizes-5xl);
+        margin-bottom: var(--chakra-space-10);
+    }
+}
+
+.css-18fqvvy h1 + *, .css-18fqvvy h2 + *, .css-18fqvvy h3 + *, .css-18fqvvy h4 + *, .css-18fqvvy hr + * {
+    margin-top: 0px;
+}
+
+.css-18fqvvy h1, .css-18fqvvy h2, .css-18fqvvy h3, .css-18fqvvy h4, .css-18fqvvy h5, .css-18fqvvy h6 {
+    margin-top: var(--chakra-space-4);
+    margin-bottom: var(--chakra-space-4);
+}
+
+.css-18fqvvy p {
+    font-family: var(--chakra-fonts-body);
+    font-weight: var(--chakra-fontWeights-normal);
+    font-size: var(--chakra-fontSizes-md);
+    line-height: var(--chakra-lineHeights-6);
+    margin-top: var(--chakra-space-3);
+    margin-bottom: var(--chakra-space-3);
+}
+
+.css-18fqvvy h1 + * {
+    margin-top: 0px;
+}
+
+.css-18fqvvy a {
+    font-weight: 500;
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-fast);
+    transition-timing-function: var(--chakra-transition-easing-ease-out);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: var(--chakra-colors-blue-500);
+}
+
+.css-18fqvvy a:hover {
+    text-decoration: underline;
+}
+
+.css-18fqvvy ul {
+    padding-inline-start: var(--chakra-space-6);
+    list-style-type: disc;
+}
+
+.css-18fqvvy li {
+    padding-inline-start: var(--chakra-space-2);
+    margin-top: var(--chakra-space-3);
+    margin-bottom: var(--chakra-space-3);
+}
+
+/* Projects Page */
+.css-xqt1ff {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.css-xqt1ff > *:not(style) ~ *:not(style) {
+    margin-top: var(--chakra-space-4);
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-divider.css-svjswr {
+    opacity: 0.6;
+    border: 0;
+    border-color: inherit;
+    border-style: solid;
+    border-bottom-width: 1px;
+    width: 100%;
+}
+
+.chakra-stack.css-1cc0bcs {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chakra-stack.css-1cc0bcs > *:not(style) ~ *:not(style) {
+    margin-top: var(--chakra-space-1);
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: 0px;
+}
+
+.chakra-text.css-722v25 {
+    font-weight: var(--chakra-fontWeights-bold);
+}
+
+.chakra-text.css-n2gyyw {
+    font-size: var(--chakra-fontSizes-sm);
+    color: var(--chakra-colors-gray-600);
+    padding-bottom: var(--chakra-space-4);
+}
+
+.chakra-stack.css-5xpcyl {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: var(--chakra-fontSizes-sm);
+    color: var(--chakra-colors-blue-600);
+}
+
+.chakra-stack.css-5xpcyl > *:not(style) ~ *:not(style) {
+    margin-top: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: var(--chakra-space-6);
+}
+
+.chakra-link.css-spn4bz {
+    transition-property: var(--chakra-transition-property-common);
+    transition-duration: var(--chakra-transition-duration-fast);
+    transition-timing-function: var(--chakra-transition-easing-ease-out);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    color: inherit;
+}
+
+.chakra-link.css-spn4bz:hover {
+    text-decoration: underline;
+}
+
+/* ────────────────────────────────────────────────
+   Only fixes mobile menu popup horizontal position
+   ──────────────────────────────────────────────── */
+
+/* Make sure the container that holds button + menu is positioned */
+.css-z7mtfw {
+    position: relative;           /* must stay — needed for absolute positioning */
+}
+
+/* Force menu to hug the right edge, align with button */
+.css-r6z5ec {
+                   /* small offset from right edge — adjust 0.5rem–1rem if needed right: 0.5rem;*/
+    left: auto;                   /* override any previous left value */
+    min-width: 180px;             /* prevents it from being too narrow */
+    max-width: 85vw;              /* safety for very small phones */
+    margin-top: 0 rem;         /* slightly smaller gap than before */
+}
+
+/* Make sure the inner list takes full available width */
+.css-1kfu8nn {
+    width: 100%;
+    min-width: unset;             /* remove constraint that was making it tiny */
+}
+
+/* Optional — but very helpful: right-align the text inside groups */
+.chakra-stack.css-6jj1oa,
+.chakra-stack.css-1d77qj1 {
+    align-items: flex-start;      /* already correct, but reinforce */
+}
+
+
+
+
+/* ============================================
+   FIX: Uniform spacing for all projects
+   ============================================ */
+
+/* The issue: .css-n2gyyw has padding-bottom that creates uneven spacing */
+/* Solution: Remove padding-bottom and use margin on the project stack instead */
+
+/* Remove padding-bottom from description text */
+.css-xqt1ff .chakra-text.css-n2gyyw {
+    padding-bottom: 0 !important;
+}
+
+/* Add margin-top to link container for spacing after description */
+.css-xqt1ff .chakra-stack.css-5xpcyl {
+    margin-top: var(--chakra-space-4) !important;
+}
+
+/* Add margin-bottom to project stack for spacing before hr */
+.css-xqt1ff > .chakra-stack.css-1cc0bcs {
+    margin-bottom: var(--chakra-space-4) !important;
+}
+
+/* Reset the original spacing rule */
+.css-xqt1ff > *:not(style) ~ *:not(style) {
+    margin-top: 0 !important;
+}
+
+/* Apply uniform spacing to all hr elements */
+.css-xqt1ff > hr {
+    margin-top: var(--chakra-space-4) !important;
+    margin-bottom: var(--chakra-space-4) !important;
+}
+
+/* Remove margin from first hr to align with navigation */
+.css-xqt1ff > hr:first-child {
+    margin-top: 0 !important;
+    margin-bottom: var(--chakra-space-4) !important;
+}
